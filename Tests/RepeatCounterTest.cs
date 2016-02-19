@@ -10,7 +10,13 @@ namespace WordRepeatDetector
     public void CountRepeats_Will_true()
     {
       RepeatCounter model = new RepeatCounter();
-      Assert.Equal(true, model.CountRepeats());
+      Assert.Equal(true, model.CountRepeats("cats", "i just love cats and their little faces"));
+    }
+    [Fact]
+    public void CountRepeats_WillReturnTrueIfMatch_true()
+    {
+      RepeatCounter model = new RepeatCounter();
+      Assert.Equal(true, model.CountRepeats("cats", "i just love cats and their furriness"));
     }
   }
 }
