@@ -7,16 +7,16 @@ namespace WordRepeatDetector
   public class RepeatCounterTest
   {
     [Fact]
-    public void CountRepeats_Will_true()
+    public void CountRepeats_WillReturn1IfOneMatch_true()
     {
       RepeatCounter model = new RepeatCounter();
-      Assert.Equal(true, model.CountRepeats("cats", "i just love cats and their little faces"));
+      Assert.Equal(1, model.CountRepeats("cats", "i just love cats and their little faces"));
     }
     [Fact]
-    public void CountRepeats_WillReturnTrueIfMatch_true()
+    public void CountRepeats_WillReturn2IfMatchTwice_true()
     {
       RepeatCounter model = new RepeatCounter();
-      Assert.Equal(true, model.CountRepeats("cats", "i just love cats and their furriness"));
+      Assert.Equal(2, model.CountRepeats("cats", "i just love cats and their cats furriness"));
     }
   }
 }

@@ -7,23 +7,35 @@ namespace WordRepeatDetector
 {
   public class RepeatCounter
   {
-    public bool CountRepeats(string searchWord, string sentence)
+    private string _word;
+    private string[] _sentence;
+    private int _counter;
+    private List<RepeatCounter> _instances = new List<RepeatCounter>(){};
+
+    public RepeatCounter()
     {
-      string[] sentenceArray = Regex.Split(sentence, @"\W+");
+      _instances.Add(this);
+    }
+
+    public int CountRepeats(string searchWord, string searchSentence)
+    {
+      _counter = 0;
+      _word = searchWord;
+      _sentence = Regex.Split(searchSentence, @"\W+");
+
       bool yes = false;
-      foreach (string word in sentenceArray)
+      foreach (string word in _sentence)
       {
         if (word == searchWord)
         {
-          yes = true;
-          break;
+          _counter += 1;
         }
         else
         {
-         yes = false;
+          Console.WriteLine("No match");
         }
       }
-      return yes;
+      return _counter;
     }
   }
 }
