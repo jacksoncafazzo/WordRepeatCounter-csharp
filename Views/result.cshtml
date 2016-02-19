@@ -1,3 +1,4 @@
+@Html.Partial("header.cshtml")
 <container class="results">
   <h1>All right! You searched the sentence!</h1>
   <ul>
@@ -7,5 +8,7 @@
     <li id="sentence">In this sentence: @count.GetSentence()</li>
     <li id="count">And it matched: @count.GetCount() times</li>
   }
-  <a href="/clear" method="post"><img src="/Content/img/boom.png"></a>
+  <form action="/boom" method="post">
+    <button><img src="/Content/img/boom.png"></button>
+  </form>
 </div>

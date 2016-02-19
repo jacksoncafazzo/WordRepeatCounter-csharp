@@ -20,6 +20,11 @@ namespace WordRepeatDetector
           allCounts = RepeatCounter.GetAll();
           return View["result.cshtml", allCounts];
         };
+        Post["/boom"] = _ => {
+          RepeatCounter model = new RepeatCounter();
+          RepeatCounter.ClearAll();
+          return View["cleared.cshtml", model];
+        };
       }
     }
   }
