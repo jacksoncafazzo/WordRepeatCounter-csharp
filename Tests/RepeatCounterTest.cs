@@ -4,7 +4,7 @@ using Xunit;
 
 namespace WordRepeatDetector
 {
-  public class RepeatCounter
+  public class RepeatCounterTest
   {
     [Fact]
     public void CountRepeats_Will_true()

@@ -7,6 +7,9 @@ namespace WordRepeatDetector
 {
   public class RepeatCounter
   {
-    
+    public bool CountRepeats()
+    {
+      return true;
+    }
   }
 }
