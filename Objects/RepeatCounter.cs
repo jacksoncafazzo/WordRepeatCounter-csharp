@@ -11,7 +11,7 @@ namespace WordRepeatDetector
     private string _originalSentence;
     private string[] _sentence;
     private int _counter;
-    private List<RepeatCounter> _instances = new List<RepeatCounter>(){};
+    private static List<RepeatCounter> _instances = new List<RepeatCounter>(){};
 
     public RepeatCounter()
     {
@@ -29,9 +29,13 @@ namespace WordRepeatDetector
     {
       return _counter;
     }
-    public List<RepeatCounter> GetAll()
+    public static List<RepeatCounter> GetAll()
     {
       return _instances;
+    }
+    public static void ClearAll()
+    {
+      _instances.Clear();
     }
 
     public int CountRepeats(string searchWord, string searchSentence)

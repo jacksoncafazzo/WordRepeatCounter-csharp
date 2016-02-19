@@ -13,6 +13,13 @@ namespace WordRepeatDetector
         Get["/"] = _ => {
           return View["index.cshtml"];
         };
+        Post["/search"] = _ => {
+          RepeatCounter model = new RepeatCounter();
+          model.CountRepeats(Request.Form["word"], Request.Form["sentence"]);
+          List<RepeatCounter> allCounts = new List<RepeatCounter>(){};
+          allCounts = RepeatCounter.GetAll();
+          return View["result.cshtml", allCounts];
+        };
       }
     }
   }

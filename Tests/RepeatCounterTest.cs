@@ -30,7 +30,7 @@ namespace WordRepeatDetector
       RepeatCounter model = new RepeatCounter();
       model.CountRepeats("cats", "i just love cats and their little faces");
       List<RepeatCounter> models = new List<RepeatCounter>(){};
-      models = model.GetAll();
+      models = RepeatCounter.GetAll();
       Console.WriteLine("You searched for: " + model.GetWord());
       Console.WriteLine("In this sentence: " + model.GetSentence());
       Console.WriteLine("And it matched: " + model.GetCount() + " times");

@@ -1,0 +1,11 @@
+<container class="results">
+  <h1>All right! You searched the sentence!</h1>
+  <ul>
+  @foreach (var count in @Model)
+  {
+    <li id="search_word">You searched for: @count.GetWord()</li>
+    <li id="sentence">In this sentence: @count.GetSentence()</li>
+    <li id="count">And it matched: @count.GetCount() times</li>
+  }
+  <a href="/clear" method="post"><img src="/Content/img/boom.png"></a>
+</div>

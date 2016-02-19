@@ -1,0 +1,8 @@
+#thumbs {
+  float: right;
+}
+
+.results {
+  background-image: url(/Content/img/green-vault-boy.jpg);
+  /*background-size: cover;*/
+}

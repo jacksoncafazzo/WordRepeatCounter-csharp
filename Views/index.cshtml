@@ -1,1 +1,18 @@
-HEY THERE
+@Html.Partial("header.cshtml")
+<container class="index">
+  <a href="/search" method="post"><img src="/Content/img/vault-boy-thumbs-up.jpg" id="thumbs"></a>
+
+  <h1>Hey there! Let's count words!</h1>
+  <form action="/search" method="post">
+    <div  class="input-group input-group-lg">
+      <span class="input-group-addon"><p>Search a sentence to find how
+        <br>many times a word is repeated!</p></span>
+      <input type="text" name="word" class="form-inline form-control" placeholder="Word to Search For">
+      <input type="text" name="sentence" class="text-field form-control" placeholder="Enter a sentence to search">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Go!</button>
+      </span>
+    </div>
+    <br>
+  </form>
+</div>
