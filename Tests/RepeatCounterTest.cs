@@ -25,7 +25,7 @@ namespace WordRepeatDetector
       Assert.Equal(3, model.CountRepeats("coding", "i love surf coding, coding adventures, all coding"));
     }
     [Fact]
-    public void RepeatCounter_WillCreateAnInstanceListUponCreation_true()
+    public void RepeatCounterUI_WillCreateAnInstanceListUponCreation_true()
     {
       RepeatCounter model = new RepeatCounter();
       model.CountRepeats("cats", "i just love cats and their little faces");
