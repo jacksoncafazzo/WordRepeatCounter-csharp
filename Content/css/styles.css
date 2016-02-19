@@ -1,12 +1,86 @@
-#thumbs {
-  float: right;
-}
-.results {
+body {
+  font-family: monospace;
+  font-weight: bold;
   width: 100%;
   height: 100%;
-  background: url("../img/green-vault-boy.jpg") no-repeat center;
+  background-image: url("../img/green-vault-boy.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.middle-row {
+  min-height: 500px:
+}
+
+.results h1 {
+  text-align: left;
+  padding-left: 100px;
+  text-shadow: 2px 2px 1px black;
+  color: #75ec88;
+}
+
+.index h1 {
+  text-align: left;
+  padding-left: 50px;
+  text-shadow: 2px 2px 1px black;
+  color: #75ec88;
+  font-size: 3.5em;
+}
+
+.index label {
+  font-variant: normal;
+  font-weight: bold;
+  color: #75ec88;
+}
+
+.index button {
+  color: #253d25;
+  text-shadow: 2px 2px 1px #75ec88;
+  background-color: #75ec88;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+.index-group-btn {
+  border: 4px 4px 2px black;
+}
+
+.btn:hover {
+  color: #fdf270;
+}
+.results li {
+  color: #75ec88;
+  font-family: monospace;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 1.3em;
+}
+
+#boom {
+  float: right;
+}
+
+.cleared h1 {
+  text-align: left;
+  padding-left: 85px;
+  padding-top: -60px;
+  text-shadow: 2px 2px 1px black;
+  color: #75ec88;
+}
+
+ .cleared p {
+  color: #75ec88;
+  padding-left: 75px;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.3em;
+}
+
+#gohome {
+  padding-top: 15px;
+  padding-left: 15px;
+  float: none;
 }
