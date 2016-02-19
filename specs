@@ -1,12 +1,24 @@
 Logic Specs
-first test if the method returns anything at all.
+first test if the method compiles.
+  I think this should be a boolean for simplicity.
 user will input two strings:
   one will be the word they are searching for,
+    I choose this to be a string because we only wanted whole word matches.
   the other will be the string they want to search through.
+    This I cast into a string array word by word with Regex so it's easy to iterate.
 test for returning a true bool from a match from the string.
+  start with a bool for simplicity.
 test for adding the match to a counter and returning it.
-  make the RepeatCounter object with a counter in it.
+  use an int and add one too it, nothing simpler.
+make the RepeatCounter object with a counter in it.
   it will also hold the user inputs.
+    test for the object to return proper values.
   return the object.
 
 Interface Specs
+Index invites user to enter a word and a string to search in two text boxes and click submit.
+
+Create object with inputs and run CountRepeats on it
+Show the object on a new page.
+Show the word and sentence as placeholders in text fields, inviting user to change either and submit new search.
+return to new search page showing previous searches.

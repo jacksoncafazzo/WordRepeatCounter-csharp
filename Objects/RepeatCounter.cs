@@ -41,7 +41,6 @@ namespace WordRepeatDetector
       _originalSentence = searchSentence;
       _sentence = Regex.Split(searchSentence, @"\W+");
 
-      bool yes = false;
       foreach (string word in _sentence)
       {
         if (word == searchWord)
