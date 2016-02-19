@@ -18,5 +18,22 @@ namespace WordRepeatDetector
       RepeatCounter model = new RepeatCounter();
       Assert.Equal(2, model.CountRepeats("cats", "i just love cats and their cats furriness"));
     }
+    [Fact]
+    public void CountRepeats_WillReturn3IfMatchingThreeTimes_true()
+    {
+      RepeatCounter model = new RepeatCounter();
+      Assert.Equal(3, model.CountRepeats("coding", "i love surf coding, coding adventures, all coding"));
+    }
+    [Fact]
+    public void RepeatCounter_WillCreateAnInstanceListUponCreation_true()
+    {
+      RepeatCounter model = new RepeatCounter();
+      model.CountRepeats("cats", "i just love cats and their little faces");
+      List<RepeatCounter> models = new List<RepeatCounter>(){};
+      models = model.GetAll();
+      Console.WriteLine("You searched for: " + model.GetWord());
+      Console.WriteLine("In this sentence: " + model.GetSentence());
+      Console.WriteLine("And it matched: " + model.GetCount() + " times");
+    }
   }
 }

@@ -30,10 +30,6 @@ namespace WordRepeatDetector
         {
           _counter += 1;
         }
-        else
-        {
-          Console.WriteLine("No match");
-        }
       }
       return _counter;
     }
