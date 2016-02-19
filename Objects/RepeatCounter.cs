@@ -7,9 +7,23 @@ namespace WordRepeatDetector
 {
   public class RepeatCounter
   {
-    public bool CountRepeats()
+    public bool CountRepeats(string searchWord, string sentence)
     {
-      return true;
+      string[] sentenceArray = Regex.Split(sentence, @"\W+");
+      bool yes = false;
+      foreach (string word in sentenceArray)
+      {
+        if (word == searchWord)
+        {
+          yes = true;
+          break;
+        }
+        else
+        {
+         yes = false;
+        }
+      }
+      return yes;
     }
   }
 }
