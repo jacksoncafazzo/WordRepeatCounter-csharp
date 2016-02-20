@@ -37,6 +37,36 @@ body {
   color: #75ec88;
 }
 
+input::-webkit-input-placeholder {
+color: #97d3a1 !important;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+color: #97d3a1 !important;
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #97d3a1 !important;
+}
+
+input:-ms-input-placeholder {
+color: #97d3a1 !important;
+}
+
+.index input {
+  background-color: #253d25;
+  color: #75ec88;
+}
+
+.index input:focus {
+  border-color: #75ec88;
+}
+
+.input-group-addon {
+  background-color: #253d25;
+  color: #75ec88;
+}
+
 .index button {
   color: #253d25;
   text-shadow: 2px 2px 1px #75ec88;
@@ -49,7 +79,7 @@ body {
   border: 4px 4px 2px black;
 }
 
-.btn-lg:hover {
+.btn:hover {
   color: #fdf270;
 }
 .results li {
