@@ -17,8 +17,12 @@ make the RepeatCounter object with a counter in it.
 
 Interface Specs
 Index invites user to enter a word and a string to search in two text boxes and click submit.
+Test if the user entered anything, if either string is empty, display an alert and return to index
 
 Create object with inputs and run CountRepeats on it
 Show the object on a new page.
 Show the word and sentence as placeholders in text fields, inviting user to change either and submit new search.
 return to new search page showing previous searches.
+invite user to add another search or clear all instances
+return user to home or cleared page.
+show all items when returning to results page.
