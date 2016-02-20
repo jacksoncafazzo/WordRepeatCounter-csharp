@@ -91,7 +91,28 @@ color: #97d3a1 !important;
 }
 
 #boom {
-  float: right;
+  float: none;
+}
+
+.clear button {
+  color: #fdf270;
+  background-image: url("../img/boom.png");
+  background-color: transparent;
+  height: 140px;
+  width: 128px;
+  font-weight: bold;
+  font-size: 2em;
+  background-size: cover;
+}
+
+.clear button:hover {
+  background-color: transparent;
+  color: red;
+  font-size: 2.1em;
+}
+
+.clear button:active {
+  border-color: #75ec88;
 }
 
 .cleared h1 {
@@ -107,6 +128,15 @@ color: #97d3a1 !important;
   padding-left: 75px;
   text-shadow: 1px 1px 1px black;
   font-size: 1.3em;
+}
+
+.cleared img{
+  vertical-align: text-top;
+}
+a:active {
+  border-width: medium;
+  border-style: solid;
+  border-color: #75ec88;
 }
 
 #gohome {
