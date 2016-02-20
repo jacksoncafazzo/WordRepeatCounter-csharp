@@ -49,7 +49,7 @@ body {
   border: 4px 4px 2px black;
 }
 
-.btn:hover {
+.btn-lg:hover {
   color: #fdf270;
 }
 .results li {
@@ -82,5 +82,11 @@ body {
 #gohome {
   padding-top: 15px;
   padding-left: 15px;
-  float: none;
+}
+
+#more {
+  float: right;
+  padding-top: 55px;
+  padding-right: 10px;
+  border: 4px 4px 2px #75ec88;
 }
