@@ -35,11 +35,5 @@ namespace WordRepeatDetector
       Console.WriteLine("In this sentence: " + model.GetSentence());
       Console.WriteLine("And it matched: " + model.GetCount() + " times");
     }
-    [Fact]
-    public void CountRepeats_WillReturnMessageIfMatchingEmptyString_true()
-    {
-      RepeatCounter model = new RepeatCounter();
-      Assert.Equal(3, model.CountRepeats("", "i love coding"));
-    }
   }
 }
