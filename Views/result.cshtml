@@ -2,7 +2,7 @@
 <container class="results">
   <div class="row">
     <h1>All right! You searched the sentence!</h1>
-    <div class="col-md-4 col-sm-4">
+    <div class="col-lg-4 col-md-4 col-sm-4">
       <ul>
       @foreach (var count in @Model)
       {
@@ -11,10 +11,10 @@
         <li id="count">And it matched: @count.GetCount() times</li>
       }
     </div>
-    <div class="col-md-4 col-sm-5">
+    <div class="col-lg-4 col-md-4 col-sm-5">
 
     </div>
-    <div class="col-md-4 col-sm-3">
+    <div class="col-lg-4 col-md-4 col-sm-3">
       <form action="/boom" method="post">
         <button><img src="/Content/img/boom.png" id="boom"></button>
         <a href="/" id="more"><img src="/Content/img/more.jpg"  alt="add another search"></a>

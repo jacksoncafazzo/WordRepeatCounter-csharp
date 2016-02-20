@@ -11,6 +11,7 @@ namespace WordRepeatDetector
     private string _originalSentence;
     private string[] _sentence;
     private int _counter;
+    private string _symbolSearch;
     private static List<RepeatCounter> _instances = new List<RepeatCounter>(){};
 
     public RepeatCounter()
@@ -38,12 +39,21 @@ namespace WordRepeatDetector
       _instances.Clear();
     }
 
-    public int CountRepeats(string searchWord, string searchSentence)
+    public int CountRepeats(string searchWord, string searchSentence, string command)
     {
       _counter = 0;
       _word = searchWord;
       _originalSentence = searchSentence;
-      _sentence = Regex.Split(searchSentence, @"\W+");
+      _symbolSearch = command;
+      if (command.Equals("spaces"))
+      {
+        _sentence = Regex.Split(searchSentence, @"\W");
+      }
+      else
+      {
+        _sentence = Regex.Split(searchSentence, @" ");
+      }
+
       foreach (string word in _sentence)
       {
         if (word == searchWord)

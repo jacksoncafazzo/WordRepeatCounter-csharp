@@ -1,4 +1,5 @@
 @Html.Partial("header.cshtml")
+
 <container class="index">
   <div class="row">
     <div class="col-md-1">
@@ -24,11 +25,11 @@
             <br>many times a word is repeated!</p></span>
           <input type="text" name="word" class="form-inline form-control" placeholder="Word to Search For" autofocus>
           <input type="text" name="sentence" class="text-field form-control" placeholder="Enter a sentence to search">
-          <span class="input-group-btn">
-            <button class="btn-lg" type="submit">Go!</button>
+          <span class="input-group-btn btn-group-vertical">
+            <button class="btn" type="submit" name="command" value="spaces">WORDS ONLY</button>
+            <button class="btn" type="submit" name="command" value="symbols">INCL SYMBOLS</button>
           </span>
         </div>
-        <br>
       </form>
     </div>
   </div>
