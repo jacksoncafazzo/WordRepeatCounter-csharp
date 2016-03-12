@@ -1,15 +1,17 @@
-Logic Specs
-first test if the method compiles.
-test for user will input two strings:
-  one will be the word they are searching for,
-    I choose this to be a string because we only wanted whole word matches.
-  the other will be the string they want to search through.
-    This I cast into a string array word by word with Regex so it's easy to iterate.
-test for returning a true bool from a match from the string.
-  start with a bool for simplicity.
-test for adding the match to a counter and returning it.
-  use an int and add one too it, nothing simpler.
-test for RepeatCounter to count repeats.
+Business Logic Specs
+User input tests:
+
+1. Test a single word match. 
+    Input ["cats", "cats"]
+    Output 1.
+
+2. Test a single word match, ignoring other words. 
+    Input ["cats", "i just love cats and their little faces"]
+    Output 1.
+  
+3. Test method that returns number of repeats
+    Input ["cats", "my favorite cats are black cats and white cats"]
+    Output 2.
 
 Interface Specs
 Index invites user to enter a word and a string to search in two text boxes and click submit.
