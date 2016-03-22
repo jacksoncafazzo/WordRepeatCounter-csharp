@@ -1,15 +1,19 @@
 Business Logic Specs
 User input tests:
 
-1. Test a single word match. 
+1. Test a single word match.
     Input ["cats", "cats"]
     Output 1.
 
-2. Test a single word match, ignoring other words. 
+2. Test single word match with a 1 to see if I need that for resubmission to pass.
+    Input ["cats", "cats", 1]
+    Output 1.
+
+3. Test a single word match, ignoring other words.
     Input ["cats", "i just love cats and their little faces"]
     Output 1.
-  
-3. Test method that returns number of repeats
+
+4. Test method RepeatCounter that returns number of repeats
     Input ["cats", "my favorite cats are black cats and white cats"]
     Output 2.
 
